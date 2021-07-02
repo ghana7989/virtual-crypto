@@ -1,22 +1,20 @@
-/**
- * Learn more about using TypeScript with React Navigation:
- * https://reactnavigation.org/docs/typescript/
- */
+import {RouteProp} from '@react-navigation/native'
+import {StackNavigationProp} from '@react-navigation/stack'
 
 export type RootStackParamList = {
-  Root: undefined;
-  NotFound: undefined;
-};
-
+	Root: undefined
+	NotFound: undefined
+	CoinDetails: undefined
+	CoinExchange: undefined
+}
+export type RootStackNavigationProps<T extends keyof RootStackParamList> = {
+	navigation: StackNavigationProp<RootStackParamList, T>
+	route: RouteProp<RootStackParamList, T>
+}
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
-};
-
-export type TabOneParamList = {
-  TabOneScreen: undefined;
-};
-
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
-};
+	Home: undefined
+	Portfolio: undefined
+	Market: undefined
+	Rankings: undefined
+	Profile: undefined
+}
