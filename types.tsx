@@ -6,6 +6,7 @@ export type RootStackParamList = {
 	NotFound: undefined
 	CoinDetails: undefined
 	CoinExchange: undefined
+	Welcome: undefined
 }
 export type RootStackNavigationProps<T extends keyof RootStackParamList> = {
 	navigation: StackNavigationProp<RootStackParamList, T>

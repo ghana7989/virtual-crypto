@@ -21,7 +21,7 @@ const CoinDetailsScreen: FC<CoinDetailsScreenProps> = () => {
 		valueChange24H: -9.87,
 		valueChange1H: 0.87,
 		valueChange7D: -89.87,
-		currentPrice: 598745,
+		currentPrice: 1000,
 		amount: 99999,
 	})
 
